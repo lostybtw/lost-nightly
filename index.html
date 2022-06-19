@@ -21,16 +21,33 @@
 <body>
     <div id="apexContainer">
 
-        <div id="headingContainer">(⌐■_■)</div>
+        <div id="headingContainer"><b>lost@lost-arch >_ </b></div>
 
-        <div id="clockContainer">00:00</div>
-        
+        <div id="clockContainer">00:00:00</div>
+       
+		<script>
+		          function SearchQuery(val) {
+		            document.getElementById("searchButton").href = "https://www.duckduckgo.com/?q=" + val + "&t=h_&ia=web";
+		          }
+		        
+		          function buttonClick(){
+		            document.getElementById("searchBox").value = "";
+		          }
+		        </script>
+		        
+		        <section>
+                    <input id="searchBox" type="text" name="searchBox" value="Search On The Web" onchange="SearchQuery(this.value)" style="border-radius: 20px; display: flex;flex-direction: column">
+		          <a id="searchButton" target="_blank" onclick="buttonClick()">Search</p>
+		        <section>
+		                
+
         <ul id="bookmarksContainer">
             <div class="bookmark" id="b1"><a href="https://github.com" id="aB1"><img src="assets/github.svg" id="imgB1"></a></div>
             <div class="bookmark" id="b3"><a href="https://www.youtube.com" id="aB3"><img src="assets/youtube.svg" id="imgB3"></a></div>
             <div class="bookmark" id="b4"><a href="https://mail.google.com/mail/u/1" id="aB4"><img src="assets/gmail.svg" id="imgB4"></a></div>
             <div class="bookmark" id="b5"><img src="assets/settings.svg"></div>
             <div class="bookmark" id="b6"><a href="https://discord.com/app" id="aB6"><img src="assets/discord.svg">
+            <div class="bookmark" id="b1"><a href="https://reddit.com/r/unixporn" id="aB1"><img src="assets/reddit.svg" id="imgB7"></a></div>
         </ul>
 
         <div id="settingsContainer" style="display: none;">

@@ -3,16 +3,11 @@ function displayClock() {
     let date = new Date();
     let hrs = date.getHours()+5;
     let min = date.getMinutes()+30;
-    if (hrs > 12) {
-        hrs = hrs - 12
-    }  
-    if (hrs < 10) {
-        hrs = "0" + hrs
-    }
-    if (min < 10) {
-        min = "0" + min
-    }
-    clockContainer.innerHTML = hrs + ':' + min;
+    let sec = date.getSeconds()
+    date.setHours(hrs)
+    date.setMinutes(min)
+    date.setSeconds(sec)
+    clockContainer.innerHTML = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 }
 
 

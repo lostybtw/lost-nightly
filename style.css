@@ -134,3 +134,7 @@ body {
 .inputRange:hover {
     opacity: 1;
 }
+
+.searchBox{
+    text-align: center
+}
