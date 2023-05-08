@@ -1,8 +1,8 @@
 function displayClock() {
     const clockContainer = document.querySelector("#clockContainer");
     let date = new Date();
-    let hrs = date.getHours();
-    let min = date.getMinutes();
+    let hrs = date.getHours()-5;
+    let min = date.getMinutes()-30;
     let sec = date.getSeconds()
     date.setHours(hrs)
     date.setMinutes(min)
