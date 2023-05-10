@@ -7,7 +7,7 @@ function displayClock() {
     date.setHours(hrs)
     date.setMinutes(min)
     date.setSeconds(sec)
-    clockContainer.innerHTML = date.getHours()+5 + ':' + date.getMinutes()+30 + ':' + date.getSeconds();
+    clockContainer.innerHTML = date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 }
 
 
